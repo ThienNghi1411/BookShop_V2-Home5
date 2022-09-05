@@ -1,0 +1,7 @@
+{%- case settings.product_default_template -%}
+  {%- when 'art' -%}{% section 'product-art' %}
+  {%- when 'music' -%}{% section 'product-music' %}
+  {%- when 'video' -%}{% section 'product-video' %}
+  {%- when 'game' -%}{% section 'product-game' %}
+  {%- else -%}{% section 'product-simple' %}
+{%- endcase -%} 
